@@ -15,7 +15,9 @@ def nyc_pigeon_organizer(data)
         if resultHash[thisvalue2] == nil
           result2Hash[keyupdater] = newArray.push(keyupdater2)
         else
-          if resultHash[thisvalue2][keyupdater] == nil
+          if resultHash[thisvalue2][keyupdater] != nil
+            result2Hash[keyupdater] = resultHash[thisvalue2][keyupdater].push(keyupdater2)
+        
             
           else
           end
@@ -33,6 +35,7 @@ def nyc_pigeon_organizer(data)
    
       #end
         nameArray =[];
+        result2Hash ={};
       end
     end
   end
