@@ -13,16 +13,17 @@ def nyc_pigeon_organizer(data)
       value2.each do |thisvalue2|
         
         if resultHash[thisvalue2] == nil
-          result2Hash[keyupdater] = newArray.push(keyupdater2)
+          newArray.push(keyupdater2);
+          #result2Hash[keyupdater] = newArray.push(keyupdater2)
         else
           if resultHash[thisvalue2][keyupdater] != nil
-            result2Hash[keyupdater] = resultHash[thisvalue2][keyupdater].push(keyupdater2)
+            result2Hash[keyupdater] = resultHash[thisvalue2][keyupdater]
         
             
           else
           end
         end
-        
+        result2Hash[keyupdater] =newArray;
         resultHash[thisvalue2] = result2Hash
         
         
