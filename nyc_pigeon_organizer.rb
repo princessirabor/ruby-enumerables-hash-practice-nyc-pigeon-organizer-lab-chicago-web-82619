@@ -4,11 +4,12 @@ def nyc_pigeon_organizer(data)
   result2Hash ={}
   keyupdater =""
   keyupdater2 =""
+  newArray = []
   
   data.each do |(key,value)|
     keyupdater = key
     value.each do |(key2,value2)|
-      newArray = []
+      
       keyupdater2 =key2
       value2.each do |thisvalue2|
         
