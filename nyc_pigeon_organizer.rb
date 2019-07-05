@@ -10,10 +10,10 @@ def nyc_pigeon_organizer(data)
   data.each do |(key,value)|
     keyupdater = key
     value.each do |(key2,value2)|
-      
       keyupdater2 =key2
       value2.each do |thisvalue2|
         if !!!resultHash[thisvalue2]
+          keyupdater2 = keyupdater2.to_s 
           newArray.push(keyupdater2);
           #result2Hash[keyupdater] = newArray.push(keyupdater2)
         else 
