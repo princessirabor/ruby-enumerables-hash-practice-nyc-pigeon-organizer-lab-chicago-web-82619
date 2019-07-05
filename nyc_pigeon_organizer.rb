@@ -20,6 +20,7 @@ def nyc_pigeon_organizer(data)
           p "#{resultHash[thisvalue2][keyupdater]} i hit here"
           #if resultHash[thisvalue2][keyupdater] != nil
             newArray = resultHash[thisvalue2][keyupdater]
+            p "#{newArray} i am array not nil"
             newArray.push(keyupdater2);
         end
         result2Hash[keyupdater] =newArray;
