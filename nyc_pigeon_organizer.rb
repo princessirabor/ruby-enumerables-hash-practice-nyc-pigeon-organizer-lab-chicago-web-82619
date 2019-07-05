@@ -33,7 +33,7 @@ def nyc_pigeon_organizer(data)
          
    
       #end
-        nameArray =[];
+        newArray =[];
         result2Hash ={};
       end
     end
