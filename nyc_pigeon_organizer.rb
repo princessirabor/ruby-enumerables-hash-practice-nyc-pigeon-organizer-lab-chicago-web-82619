@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
   data.each do |(key,value)|
     keyupdater = key
     value.each do |(key2,value2)|
-      nameArray = []
+      newArray = []
       keyupdater2 =key2
       value2.each do |thisvalue2|
         
