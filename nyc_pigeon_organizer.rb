@@ -18,13 +18,18 @@ def nyc_pigeon_organizer(data)
           newArray.push(keyupdater3);
           #result2Hash[keyupdater] = newArray.push(keyupdater2)
         else
-          #if resultHash[thisvalue2][keyupdater] != nil
+          if resultHash[thisvalue2][keyupdater] == nil
+          result2Hash = resultHash[thisvalue2];
+          result2Hash[keyupdater]= newArray
+           else
             newArray = resultHash[thisvalue2][keyupdater]
+            p "#{resultHash[thisvalue2][keyupdater]} also shouldnt be nil now"
             p"#{thisvalue2} name array"
             p"#{keyupdater}"
             p "#{newArray} i am array not nil"
             keyupdater3 = keyupdater2.to_s 
             newArray.push(keyupdater3);
+           end
         end
         result2Hash[keyupdater] =newArray;
         resultHash[thisvalue2] = result2Hash
