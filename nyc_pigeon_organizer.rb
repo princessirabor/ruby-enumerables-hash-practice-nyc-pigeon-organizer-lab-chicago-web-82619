@@ -11,6 +11,16 @@ def nyc_pigeon_organizer(data)
       nameArray = []
       keyupdater2 =key2
       value2.each do |thisvalue2|
+        
+        if resultHash[thisvalue2] == nil
+          resultHash[thisvalue2] = result2Hash
+        else
+          result2Hash[keyupdater] =
+        end
+        
+        
+        
+        
        #resultHash[thisvalue2] ={key => nameArray.push(key2)}
        resultHash[thisvalue2] == nil ? result2Hash : resultHash[thisvalue2]
        
