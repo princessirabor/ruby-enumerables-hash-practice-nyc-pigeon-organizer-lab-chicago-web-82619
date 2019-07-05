@@ -2,6 +2,7 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   resultHash = {}
   result2Hash ={}
+  tempHash={}
   keyupdater =""
   keyupdater2 =""
   newArray = []
