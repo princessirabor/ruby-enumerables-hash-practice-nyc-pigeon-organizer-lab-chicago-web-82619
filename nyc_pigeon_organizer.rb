@@ -5,6 +5,7 @@ def nyc_pigeon_organizer(data)
   tempHash={}
   keyupdater =""
   keyupdater2 =""
+  keyupdater3 =""
   newArray = []
   
   data.each do |(key,value)|
@@ -13,16 +14,17 @@ def nyc_pigeon_organizer(data)
       keyupdater2 =key2
       value2.each do |thisvalue2|
         if !!!resultHash[thisvalue2]
-          keyupdater2 = keyupdater2.to_s 
-          newArray.push(keyupdater2);
+          keyupdater3 = keyupdater2.to_s 
+          newArray.push(keyupdater3);
           #result2Hash[keyupdater] = newArray.push(keyupdater2)
         else
           #if resultHash[thisvalue2][keyupdater] != nil
             newArray = resultHash[thisvalue2][keyupdater]
-            p"#{}"
+            p"#{thisvalue2} name array"
+            p"#{keyupdater}"
             p "#{newArray} i am array not nil"
-            keyupdater2 = keyupdater2.to_s 
-            newArray.push(keyupdater2);
+            keyupdater3 = keyupdater2.to_s 
+            newArray.push(keyupdater3);
         end
         result2Hash[keyupdater] =newArray;
         resultHash[thisvalue2] = result2Hash
