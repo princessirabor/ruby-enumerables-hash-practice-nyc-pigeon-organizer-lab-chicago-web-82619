@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
       
       keyupdater2 =key2
       value2.each do |thisvalue2|
-        p "#{resultHash[thisvalue2]} i hit here"
+        p "#{!!resultHash[thisvalue2]} i hit here"
         if !!resultHash[thisvalue2]
           newArray.push(keyupdater2);
           #result2Hash[keyupdater] = newArray.push(keyupdater2)
