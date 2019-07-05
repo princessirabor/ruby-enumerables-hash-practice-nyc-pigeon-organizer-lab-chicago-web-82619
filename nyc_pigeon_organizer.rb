@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(data)
       value2.each do |thisvalue2|
         
         if resultHash[thisvalue2] == nil
-          resultHash[thisvalue2] = result2Hash
+          result2Hash[keyupdater] = result2Hash
         else
           result2Hash[keyupdater] =
         end
