@@ -15,23 +15,20 @@ def nyc_pigeon_organizer(data)
         if resultHash[thisvalue2] == nil
           newArray.push(keyupdater2);
           #result2Hash[keyupdater] = newArray.push(keyupdater2)
-        else
-          if resultHash[thisvalue2][keyupdater] != nil
-            result2Hash[keyupdater] = resultHash[thisvalue2][keyupdater]
-        
-            
-          else
-          end
+        else 
+          #if resultHash[thisvalue2][keyupdater] != nil
+            newArray = resultHash[thisvalue2][keyupdater]
+            newArray.push(keyupdater2);
         end
         result2Hash[keyupdater] =newArray;
         resultHash[thisvalue2] = result2Hash
         
         
        #resultHash[thisvalue2] ={key => nameArray.push(key2)}
-       resultHash[thisvalue2] == nil ? result2Hash : resultHash[thisvalue2]
+       #resultHash[thisvalue2] == nil ? result2Hash : resultHash[thisvalue2]
        
        #if resultHash[thisvalue2] !=nil 
-       resultHash[thisvalue2][keyupdater] == nil ? [] : resultHash[thisvalue2][keyupdater].push(keyupdater2)
+       #resultHash[thisvalue2][keyupdater] == nil ? [] : resultHash[thisvalue2][keyupdater].push(keyupdater2)
          
    
       #end
